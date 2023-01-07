@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>LEAF ACADEMY- register</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- STYLING -->
+    <link rel="stylesheet" type="text/css" href="register.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+      
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="../index.html">LEAF ACADEMY</a>
+
+        
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item justify-content-right">
+                <button class="btn btn-sm btn-success " type="button"><a class="btn btn-sm" role="button" href="../login/login.html">LOGIN</a></button>
+            </li>
+          </ul>
+    </nav>
+
+      
+
+
+      <div class="container-fluid">
+        <div class="div" style="padding: 4%;"></div>
+
+          <div class="row">
+
+              <div class="col-lg-3"></div>
+
+              <div id="f-bord" class="col-lg-6 bg-dark l-con rounded">
+
+                <div id="display" class="div space">
+                
+                <?php
+                      include '../register/rProcesses/insertUser.php';
+                ?>
+
+                    <h2 class="text-center">LEAF ACADEMY REGISTERATION</h2>
+
+                    <form action='../register/register.php' method='POST' enctype="multipart/form-data">
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="fname">First Name:</label>
+                          <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="lname">Last Name:</label>
+                          <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="email">Email:</label>
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                        
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="numbers">Number:</label>
+                          <input type="tel" class="form-control" id="numbers" name="numbers" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group col-md-4">
+
+                          <p>Gender:</p>
+                          <div class="form-check-inline">
+                            <label class="form-check-label" for="male">
+                              <input type="radio" class="form-check-input " id="male" name="gender" value="male" >Male
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label" for="female">
+                              <input type="radio" class="form-check-input " id="female" name="gender" value="female">Female
+                            </label>
+                          </div>
+                          <div class="form-check-inline">
+                            <label class="form-check-label" for="other">
+                              <input type="radio" class="form-check-input " id="other" name="gender" value="other">Other
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="passwords">Password:</label>
+                          <input type="passwords" class="form-control" id="passwords" name="passwords" placeholder="Password">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="cPassword">Confirm Password:</label>
+                          <input type="password" class="form-control" id="cPassword" name="cPassword" placeholder="Confirm Password">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="street1">Street Address:</label>
+                        <input type="text" class="form-control" id="street1" name="street1" placeholder="1234 Main St">
+                      </div>
+                      <div class="form-group">
+                        <label for="street2">Street Address 2:</label>
+                        <input type="text" class="form-control" id="street2" name="street2" placeholder="Apartment, studio, or floor">
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="city">City</label>
+                          <input type="text" placeholder="Enter City" name="city" class="form-control" id="city">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="states">State</label>
+                          <select id="states" name="states" class="form-control">
+                            <option selected>Choose...</option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="zipcode">Zipcode</label>
+                          <input type="text" placeholder="32208" name="zipcode"  class="form-control" id="zipcode">
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="form-group col-md-4">
+                          <label for="pic">Upload Picture</label>
+                          <input type="hidden" name="size" value="10000000">
+                          <input type="file" class="form-control-file border" id="pic" name="pic">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <label for="comment">Comment:</label>
+                          <textarea class="form-control" rows="4" name="comment" placeholder="What would you like to say?" id="comment"></textarea>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="agree" required>
+                          <label class="form-check-label" for="agree">
+                           <strong>I agree</strong> 
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="form-row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6">
+                          <button type="submit" name="registerBtn" id="registerBtn" class="btn btn-primary btn-block"><h5 class="text-center">REGISTER</h5></button>
+
+                        </div>
+
+                        <div class="col-sm-3"></div>
+
+                      </div>
+                    </form>
+                </div>
+                
+              </div>
+
+              <div class="col-sm-3"></div>
+          </div>
+
+          <div class="div" style="padding: 3%;"></div>
+      </div>
+              
+    <!-- JavaScript -->
+      <script src="script.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

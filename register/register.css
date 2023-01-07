@@ -1,0 +1,41 @@
+body{
+    background-image: url(../images/login3.jpg);
+    background-size: cover ;
+    background: linear-gradient(rgb(158, 165, 153),rgb(43, 44, 40),) !important;
+    background-position: center;
+
+}
+
+#registerTag{
+    text-decoration: none;
+}
+
+.btn-submit{
+    background: #ff5722 !important;
+    border-color: transparent !important;
+    color: #fff !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    letter-spacing: 2px !important;
+    height: 50px !important;
+    margin-top: 20px !important;
+}
+
+.l-con{
+    color: white;
+    border: solid, black, 5px;
+}
+
+.space{
+    padding: 10px 5px;
+}
+
+/* .form-group{
+    padding: 5px 10px;
+    margin-bottom: -5px !important;
+} */
+
+
+#gender{
+    margin-top: -7px;
+}
