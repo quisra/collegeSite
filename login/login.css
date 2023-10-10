@@ -1,8 +1,10 @@
 body{
     background-image: url(../images/login3.jpg);
-    background-size: cover ;
+    background-size: cover !important;
     background: linear-gradient(rgb(158, 165, 153),rgb(43, 44, 40),) !important;
     background-position: center;
+    background-size: auto;
+    background-clip: padding-box;
 
 }
 
